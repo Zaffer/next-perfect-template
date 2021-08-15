@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -12,23 +10,30 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Project folders structure
+ref: https://unlyed.github.io/next-right-now/reference/folder-structure
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `.github`: Folder used by GitHub, containing various things.
+    - ISSUE_TEMPLATE: Contains the basics (bug report, feature request, question) displayed to people when they’re creating a new issue. Change at your convenience.
+    - workflows: Each file in this folder is a GitHub Action workflow.
+- `.storybook`: Folder used by Storybook, see “Storybook”.
+- `public`: Static files, see “Static file serving.
+- `scripts`: Scripts, see “Scripts and utilities.
+- `src`: Source code of the app, described in detail below.
 
-## Learn More
+The src folder contains all the source files for your Next.js app.
+It’s where you should write most of your code.
+"It also contains the stories folder, which isn’t used by the Next.js framework, but by Storybook."
 
-To learn more about Next.js, take a look at the following resources:
+## Folder structure
+Overview of what each folder under src is about:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app`: Contains code (components, business logic, types) that is being used by the special pages/_app.tsx Next.js file.
+- `common`: Contains everything that cannot be categorized as a module. See documentation below.
+- `layouts`: Contains the layouts used by pages. See documentation below.
+- `modules`: Contains related pieces of code (components, types, utils) grouped together. See documentation below.
+    - `core`: Contains built-in modules included with the NRN preset you selected. They are being separated from other modules by default, so you can locate your own code faster.
+- `pages`: Contains Next.js pages and api folder.
+- `stories`: Contains Storybook stories.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
