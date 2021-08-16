@@ -31,7 +31,7 @@ Overview of what each folder under src is about:
 
 - `app`: Contains code (components, business logic, types) that is being used by the special pages/_app.tsx Next.js file.
 - `common`: Contains everything that cannot be categorized as a module. See documentation below.
-- `layouts`: Contains the layouts used by pages. See documentation below.
+- `layouts`: Contains the layouts used by pages.
 - `modules`: Contains related pieces of code (components, types, utils) grouped together. See documentation below.
     - `core`: Contains built-in modules included with the NRN preset you selected. They are being separated from other modules by default, so you can locate your own code faster.
 - `pages`: Contains Next.js pages and api folder.
