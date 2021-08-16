@@ -1,0 +1,1 @@
+when this repo is reused only the common modules stay in core
