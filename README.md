@@ -1,3 +1,5 @@
+Credit to Next-Right-Now: https://github.com/UnlyEd/next-right-now
+
 ## Getting Started
 
 First, run the development server:
