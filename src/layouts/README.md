@@ -7,7 +7,6 @@ Summary:
 
 layouts: Contains the layouts used by pages. See documentation below.
 
-- `public`: Only used by a single page (at "/public"), meant to be the layout for public pages.
 - `core`: Contains reusable/extendable code (components, business logic, data fetching) used by other layouts.
 - `default`: Default layout that comes built-in with the strict minimum components (Nav, Footer).
 - You can add custom layouts and use them in your pages right away.
